@@ -70,5 +70,12 @@ alias eb="nano ~/.bashrc"
 alias u='clear; cd ../; pwd; ls -lhGgo'
 alias d='clear; cd -; ls -lhGgo'
 
-#R
-export PATH="/home/pvictori/R/bin:$PATH"
+#systemctl aliases
+alias sysenable="sudo systemctl enable --now"
+alias sysrestart="sudo systemctl restart"
+alias sysstatus="sudo systemctl status"
+
+#pacman aliases
+alias install="sudo pacman -S"
+alias upgrade="sudo pacman -Syu"
+alias uninstall="sudo pacman -R"
