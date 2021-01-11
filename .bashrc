@@ -99,3 +99,6 @@ alias ly="swaglyrics -c"
 
 #export to git folder
 alias bgit="cp ~/.bashrc /data/coding/utilities/.bashrc"
+
+#dowload bashrc
+alias getb="wget https://raw.githubusercontent.com/pedrovictori/utilities/master/.bashrc"
