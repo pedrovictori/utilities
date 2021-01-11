@@ -79,3 +79,23 @@ alias sysstatus="sudo systemctl status"
 alias install="sudo pacman -S"
 alias upgrade="sudo pacman -Syu"
 alias uninstall="sudo pacman -R"
+
+#to cd and ls in one command
+function cs () {
+    cd "$@" && ls
+    }
+
+#to change wallpaper
+alias wallpaper="feh --bg-scale" 
+
+#for pywall
+(cat ~/.cache/wal/sequences &)
+
+#to swallow GUI producing terminals
+alias sw="i3-swallow"
+
+#spotify lyrics
+alias ly="swaglyrics -c"
+
+#export to git folder
+alias bgit="cp ~/.bashrc /data/coding/utilities/.bashrc"
