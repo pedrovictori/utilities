@@ -11,7 +11,7 @@ fi
 # User specific aliases and functions
 #improving prompt
 export PROMPT_COMMAND="echo -n \[\$(date +%H:%M:%S)\]\ "
-export PS1="\u@\h:\w\\$ "
+export PS1="\[\u@\h:\w\\$\] "
 
 #https://github.com/stephenturner/oneliners
 #aliases for cd ..
@@ -77,7 +77,7 @@ alias sysstatus="sudo systemctl status"
 
 #pacman aliases
 alias install="sudo pacman -S"
-alias upgrade="sudo pacman -Syu"
+alias upgrade="yay -Syu"
 alias uninstall="sudo pacman -R"
 
 #to cd and ls in one command
@@ -102,3 +102,6 @@ alias bgit="cp ~/.bashrc /data/coding/utilities/.bashrc"
 
 #dowload bashrc
 alias getb="mv .bashrc .bashrc.old; wget https://raw.githubusercontent.com/pedrovictori/utilities/master/.bashrc"
+
+#alias ping to google
+alias pingtest="ping www.google.com"
